@@ -1,146 +1,1410 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nextron</title>
     <link rel="shortcut icon" href="img/Logo 1.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <main>
-      <div class="box">
-        <div class="inner-box">
-          <div class="forms-wrap">
-            <form action="index.html" autocomplete="off" class="sign-in-form">
-              <div class="logo">
-                <img src="./img/Logo 1.png" alt="easyclass" />
-                <h4>Nextron</h4>
-              </div>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <div id="page" class="site page-home">
 
-              <div class="heading">
-                <h2>Bienvenido/a, </h2>
-                <h6>¿Aún no te registras?</h6>
-                <a href="#" class="toggle">Registrate</a>
-              </div>
-
-              <div class="actual-form">
-                <div class="input-wrap">
-                  <input
-                    type="text"
-                    minlength="4"
-                    class="input-field"
-                    autocomplete="off"
-                    required
-                  />
-                  <label>Correo Electrónico</label>
+        <aside class="site-off desktop-hide">
+            <div class="off-canvas">
+                <div class="canvas-head flexitem">
+                    <div class="logo"><a href="/"><span></span>Nextron</a></div>
+                    <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
                 </div>
+                <div class="departments"></div>
+                <nav></nav>
+                <div class="thetop-nav"></div>
+            </div>
+        </aside>
 
-                <div class="input-wrap">
-                  <input
-                    type="password"
-                    minlength="4"
-                    class="input-field"
-                    autocomplete="off"
-                    required
-                  />
-                  <label>Contraseña</label>
+
+        <header>
+            <div class="header-top mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <ul class="flexitem main-links">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Productos Característicos</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem main-links">
+
+                                    <li><a href="inicio de sección.html">Inicio de sección</a></li>
+                                    <li><a href="#">Mi Cuenta</a></li>
+                                    <li><a href="#">Order Traking</a></li>
+                                    <li><a href="#">DOP <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                    <ul>
+                                       <li class="current"><a href="#">DOP</a></li>
+                                       <li><a href="#">USD</a></li>
+                                       <li><a href="#">EURO</a></li>
+                                       <li><a href="#">GBP</a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="#">Español <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                        <ul>
+                                            <li class="current"><a href="#">Español</a></li>
+                                            <li><a href="#">English</a></li>
+                                            <li><a href="#">Italian</a></li>
+                                            <li><a href="#">Portuguese</a></li>
+                                         </ul>
+                                    </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-
-                  <input type="submit" value="Inicia Seción" class="sign-btn" />
-
-                <p class="text">
-                  ¿Olvidaste tu contraseña o tus datos para iniciar seción?
-                  <a href="#">Busca Ayuda</a></p>
-              </div>
-            </form>
-
-            <form action="index.html" autocomplete="off" class="sign-up-form">
-              <div class="logo">
-                <img src="./img/Logo 1.png" alt="easyclass" />
-                <h4>Nextron</h4>
-              </div>
-
-              <div class="heading">
-                <h2>¡Empecemos!</h2>
-                <h6>¿Ya tienes una cuenta?</h6>
-                <a href="#" class="toggle">Inicia Seción</a>
-              </div>
-
-              <div class="actual-form">
-                <div class="input-wrap">
-                  <input
-                    type="text"
-                    minlength="4"
-                    class="input-field"
-                    autocomplete="off"
-                    required
-                  />
-                  <label>Nombre</label>
-                </div>
-
-                <div class="input-wrap">
-                  <input
-                    type="email"
-                    class="input-field"
-                    autocomplete="off"
-                    required
-                  />
-                  <label>Correo Electrónico</label>
-                </div>
-
-                <div class="input-wrap">
-                  <input
-                    type="password"
-                    minlength="4"
-                    class="input-field"
-                    autocomplete="off"
-                    required
-                  />
-                  <label>Contraseña</label>
-                </div>
-
-                <input type="submit" value="Registrarse" class="sign-btn" />
-
-                <p class="text">
-                  Al iniciar seción, estoy de acuerdo a
-                  <a href="#">Términos de servicio</a> y
-                  <a href="#">Política de privacidad</a>
-                </p>
-              </div>
-            </form>
-          </div>
-
-          <div class="carousel">
-            <div class="images-wrapper">
-              <img src="./img/Shopping APP.svg" class="image img-1 show" alt="" />
-              <img src="./img/Web Shopping.svg" class="image img-2" alt="" />
-              <img src="./img/Good shopping.svg" class="image img-3" alt="" />
             </div>
 
-            <div class="text-slider">
-              <div class="text-wrap">
-                <div class="text-group">
-                  <h2>Compra en Línea</h2>
-                  <h2>Que el costo no sea un límite</h2>
-                  <h2>Encuentra lo que buscas</h2>
+            <!--Header top-->
+
+            <div class="header-nav">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                         <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                    <div class="left flexitem">
+                        <div class="logo"><a href="/"><img class="new" src="img/Logo 1.png" alt=""><span>Nextron</span></a></div>
+                        <nav class="mobile-hide">
+                            <ul class="flexitem second-links">
+                                <li><a href="#">Inicio</a></li>
+                                <li><a href="#">Compras</a></li>
+                                <li class="has-child">
+                                    <a href="#">Electrónicos
+                                        <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
+                                    </a>
+
+                                    <div class="mega">
+                                        <div class="container">
+                                            <div class="wrapper">
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4>Computadoras y accesorios</h4>
+                                                        <ul>
+                                                            <li><a href="#">Computadoras</a></li>
+                                                            <li><a href="#">Laptops</a></li>
+                                                            <li><a href="#">Tablets</a></li>
+                                                            <li><a href="#">Accesorios</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4>Teléfonos móviles y accesorios</h4>
+                                                        <ul>
+                                                            <li><a href="#">Smartphones</a></li>
+                                                            <li><a href="#">Fundas</a></li>
+                                                            <li><a href="#">Cargadores</a></li>
+                                                            <li><a href="#">Auriculares</a></li>
+                                                            <li><a href="#">Baterías</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4>Cámaras y videocámaras</h4>
+                                                        <ul>
+                                                            <li><a href="#">Cámaras digitales</a></li>
+                                                            <li><a href="#">Videocámaras</a></li>
+                                                            <li><a href="#">Trípodes</a></li>
+                                                            <li><a href="#">Luces de estudio</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4>Juegos y entretenimiento</h4>
+                                                        <ul>
+                                                            <li><a href="#">Consolas de videojuegos</a></li>
+                                                            <li><a href="#">Juegos</a></li>
+                                                            <li><a href="#">Controladores</a></li>
+                                                            <li><a href="#">Realidad Virtual</a></li>
+                                                            <li><a href="#">Drones</a></li>
+                                                        </ul>
+                                                        <a href="#" class="view-all">Mirar todas las marcas <i class="ri-arrow-right-line"></i></a>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol products">
+                                                    <div class="row">
+                                                        <div class="media">
+                                                            <div class="thumbnail object-cover">
+                                                                <a href="#">
+                                                                 <img src="PAGINA/Drone BUSCADOR.png" alt="">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-content">
+                                                            <h4>¡Más Buscado!</h4>
+                                                            <a href="#" class="primary-button">Oderna Ahora</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li><a href="#">Piesas</a></li>
+                                <li>
+                                    <a href="#">Electrodomesticos
+                                        <div class="fly-item"><span>New!</span></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="right">
+                          <ul class="flexitem second-links">
+                            <li class="mobile-hide"><a href="#">
+                                <div class="icon-large"><i class="ri-heart-line"></i></div>
+                                <div class="fly-item"><span class="item-number">0</span></div>
+                            </a></li>
+                            <li class="iscart"><a href="#">
+                                <div class="icon-large">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    <div class="fly-item"><span class="item-number">4</span></div>
+                                </div>
+                                <div class="icon-text">
+                                    <div class="mini-text">Total</div>
+                                    <div class="cart-total">DOP$237,000</div>
+                                </div>
+                            </a>
+
+                                <div class="mini-cart">
+                                    <div class="content">
+                                        <div class="cart-head">
+                                            4 artículos en el carrito
+                                        </div>
+                                        <div class="cart-body">
+                                            <ul class="products mini">
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="PAGINA/IMAGENES/slider/Samsung.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">Samsung Galaxy S21</a></p>
+                                                        <span class="price">
+                                                            <span>DOP$60,000</span>
+                                                            <span class="fly-item"><span>1x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="PAGINA/IMAGENES/slider/IPAD PRO.jpeg" alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">iPad Pro</a></p>
+                                                        <span class="price">
+                                                            <span>DOP$40,500</span>
+                                                            <span class="fly-item"><span>1x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="PAGINA/Drone BUSCADOR.png" alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">DJI Drone</a></p>
+                                                        <span class="price">
+                                                            <span>DOP$16,500</span>
+                                                            <span class="fly-item"><span>1x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="PAGINA/IMAGENES/slider/Macbook.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">MacBook Pro</a></p>
+                                                        <span class="price">
+                                                            <span>DOP$120,000</span>
+                                                            <span class="fly-item"><span>1x</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cart-footer">
+                                            <div class="subtotal">
+                                                <p>Subtotal</p>
+                                                <p><strong>DOP$237,000</strong></p>
+                                            </div>
+                                            <div class="actions">
+                                                <a href="checkout.html" class="primary-button">Checkout</a>
+                                                <a href="cart.html" class="secondary-button">Ver Carrito</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
-
-              <div class="bullets">
-                <span class="active" data-value="1"></span>
-                <span data-value="2"></span>
-                <span data-value="3"></span>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </main>
+            <!--Header nav-->
 
-    <!-- Javascript file -->
+            <div class="header-main mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <div class="dpt-cat">
+                                <div class="dpt-head">
+                                    <div class="main-text">Todos los departamentos</div>
+                                    <div class="mini-text mobile-hide">Total de 1059 Productos</div>
+                                    <a href="#" class="dpt-trigger mobile-hide">
+                                        <i class="ri-menu-3-line ri-xl"></i>
+                                    </a>
+                                </div>
+                                <div class="dpt-menu">
+                                    <ul class="second-links">
+                                        <li class="has-child smartphone">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-smartphone-line"></i></div>
+                                                Smartphones
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Samsung</a></li>
+                                                <li><a href="#">iPhone</a></li>
+                                                <li><a href="#">Xiaomi</a></li>
+                                                <li><a href="#">Huawei</a></li>
+                                                <li><a href="#">LG</a></li>
+                                                <li><a href="#">Motorola</a></li>
+                                                <li><a href="#">Nokia</a></li>
+                                                <li><a href="#">OPPO</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child computer">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-computer-line"></i></div>
+                                                Computadoras
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">HP</a></li>
+                                                <li><a href="#">DELL</a></li>
+                                                <li><a href="#">MacBoock</a></li>
+                                                <li><a href="#">Asus</a></li>
+                                                <li><a href="#">MSi</a></li>
+                                                <li><a href="#">Lenovo</a></li>
+                                                <li><a href="#">Acer</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-headphone-line"></i></div>
+                                                Auriculares
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-tv-2-line"></i></div>
+                                                TV's
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-tools-line"></i></div>
+                                                Accesorios
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-shield-star-line"></i></div>
+                                                Más Vendidos
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="search-box">
+                                <form action="" class="search">
+                                    <span class="icon-large"><i class="ri-search-line"></i></span>
+                                    <input type="search" placeholder="Busca los productos">
+                                    <button type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Header nav-->
+        </header>
+         <!--HEADER-->
 
-    <script src="app.js"></script>
-  </body>
+        <main>
+            <div class="slider">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="myslider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="PAGINA/IMAGENES/slider/M.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>MacBook Pro</h4>
+                                            <h2><span>¡LO NUEVO!</span><br><span>Lo nuevo de Apple</span></h2>
+                                            <a href="#" class="primary-button">Comprar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="PAGINA/IMAGENES/slider/IPAD PRO.jpeg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>iPad Pro</h4>
+                                            <h2><span>¡LO NUEVO!</span><br><span></span></h2>
+                                            <a href="#" class="primary-button">Comprar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="PAGINA/IMAGENES/slider/DJI MINI.png" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>DJI MINI</h4>
+                                            <h2><span>¡Te puede gustar!</span><br><span></span></h2>
+                                            <a href="#" class="primary-button">Comprar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="PRODUCTOS IMG/1200px-Arduino-uno-perspective-transparent.png" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Arduino UNO</h4>
+                                            <h2><span>Siempre</span><br><span>Arma aquello que deseas</span></h2>
+                                            <a href="#" class="primary-button">Comprar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Slider-->
+
+            <div class="brands">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="item">
+                            <a href="#">
+                             <img src="PAGINA/IMAGENES/brands/samsung.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                             <img src="PAGINA/IMAGENES/brands/asus.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                             <img src="PAGINA/IMAGENES/brands/oppo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                             <img src="PAGINA/IMAGENES/brands/Apple logo (1).png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Brands-->
+
+            <div class="trending">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="sectop flexitem">
+                            <h2><span class="#"></span>Productos en tendencia</h2>
+                        </div>
+                         <div class="column">
+                            <div class="flexwrap">
+                                <div class="row products big">
+                                    <div class="item">
+                                        <div class="offer">
+                                            <p>La oferta termina en</p>
+                                            <ul class="flexcenter">
+                                                <li>1</li>
+                                                <li>15</li>
+                                                <li>27</li>
+                                                <li>60</li>
+                                            </ul>
+                                        </div>
+                                        <div class="media">
+                                            <div class="image">
+                                                <a href="single-page.html">
+                                                    <img src="PAGINA/IMAGENES/slider/Samsung.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>30%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(2,548)</span>
+                                            </div>
+                                            <h3 class="main-links"><a href="#">Samsung Galaxy S21</a></h3>
+                                            <div class="price">
+                                                <span class="current">DOP$60,000</span>
+                                                <span class="normal mini-text">DOP$85,000</span>
+                                            </div>
+                                            <div class="stock mini-text">
+                                                <div class="qty">
+                                                    <span>Stock: <strong class="qty-available">107</strong></span>
+                                                    <span>Vendidos: <strong class="qty-available">3,459</strong></span>
+                                                </div>
+                                                <div class="bar">
+                                                    <div class="available"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row products mini">
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#" class="new">
+                                                    <img src="PAGINA/IMAGENES/slider/DJI MINI.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <!--<div class="discount circle flexcenter"><span>32%</span></div>-->
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Drone DJI MINI</a></h3>
+                                            <div class="price">
+                                                <span class="current">DOP$16,500</span>
+                                                <span class="normal mini-text">DOP$25,000</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>27,000 Vendidos</p>
+                                                <p>Envio Gratis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#" class="new">
+                                                    <img src="PRODUCTOS IMG/1200px-Arduino-uno-perspective-transparent.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <!--<div class="discount circle flexcenter"><span>32%</span></div>-->
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Arduino UNO</a></h3>
+                                            <div class="price">
+                                                <span class="current">DOP$1,000.00</span>
+                                                <span class="normal mini-text">DOP$1,560.00</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>7,000 Vendidos</p>
+                                                <p>Envio Gratis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#" class="new">
+                                                    <img src="PRODUCTOS IMG/circuito integrado 555.JPG" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <!--<div class="discount circle flexcenter"><span>32%</span></div>-->
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Circuito Integrado 555</a></h3>
+                                            <div class="price">
+                                                <span class="current">DOP$260.00</span>
+                                                <span class="normal mini-text">DOP$357.50</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>578 Vendidos</p>
+                                                <p>Envio Gratis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#" class="new">
+                                                    <img src="PRODUCTOS IMG/Conector 8pines h y m.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <!--<div class="discount circle flexcenter"><span>32%</span></div>-->
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Conector 8 pines macho y hembra</a></h3>
+                                            <div class="price">
+                                                <span class="current">DOP$280.00</span>
+                                                <span class="normal mini-text">DOP$385.00</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>200 Vendidos</p>
+                                                <p>Envio Gratis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row products mini">
+                                    
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="PAGINA/IMAGENES/slider/Macbook.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <!--<div class="discount circle flexcenter"><span>32%</span></div>-->
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">MacBook Pro</a></h3>
+                                            <div class="price">
+                                                <span class="current">DOP$120,000</span>
+                                                <span class="normal mini-text">DOP$156,000</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>9,000 Vendidos</p>
+                                                <p>Envio Gratis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="PRODUCTOS IMG/capacitadores polarizados.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <!--<div class="discount circle flexcenter"><span>32%</span></div>-->
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Capacitadores Polarizados</a></h3>
+                                            <div class="price">
+                                                <span class="current">DOP$230.00</span>
+                                                <span class="normal mini-text">DOP$330.00</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>95 Vendidos</p>
+                                                <p>Envio Gratis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="PRODUCTOS IMG/capacitadores sin polarizar.jpeg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <!--<div class="discount circle flexcenter"><span>32%</span></div>-->
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Capacitadores sin Polarizar</a></h3>
+                                            <div class="price">
+                                                <span class="current">DOP$100.00</span>
+                                                <span class="normal mini-text">DOP$220.00</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>165 Vendidos</p>
+                                                <p>Envio Gratis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="PRODUCTOS IMG/Compuerta OR.png" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <!--<div class="discount circle flexcenter"><span>32%</span></div>-->
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Compuerta OR</a></h3>
+                                            <div class="price">
+                                                <span class="current">DOP$50</span>
+                                                <span class="normal mini-text">DOP$35</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>1056 Vendidos</p>
+                                                <p>Envio Gratis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Trending-->
+
+
+            <div class="features">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="column">
+                        <div class="sectop flexitem">
+                            <h2><span class="#"></span>Productos Relacionados</h2>
+                            <div class="second-links"><a href="#" class="view-all">Mirar todo<i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                            <div class="products main flexwrap">
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="single-page.html">
+                                                <img src="PAGINA/IMAGENES/slider/Samsung.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Samsung Galaxy S22 Ultra</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$60,000</span>
+                                            <span class="normal mini-text">DOP$85,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="PRODUCTOS IMG/1200px-Arduino-uno-perspective-transparent.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(563)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Arduino UNO</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$1,000.00</span>
+                                            <span class="normal mini-text">DOP$1,560.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="PRODUCTOS IMG/capacitadores polarizados.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(1,638)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Capacitadores Polarizados</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$230.00</span>
+                                            <span class="normal mini-text">DOP$330.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="PRODUCTOS IMG/capacitadores sin polarizar.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(263)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Capacitadores sin Polarizar</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$100.00</span>
+                                            <span class="normal mini-text">DOP$220.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="PAGINA/IMAGENES/slider/Macbook.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(153)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">MacBook Pro</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$120,000</span>
+                                            <span class="normal mini-text">DOP$156,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="PRODUCTOS IMG/circuito integrado 555.JPG" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(28)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Circuito Integrado 555</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$260.00</span>
+                                            <span class="normal mini-text">DOP$357.50</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="PRODUCTOS IMG/Compuerta OR.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(48)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Compuerta OR</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$50</span>
+                                            <span class="normal mini-text">DOP$35</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="PRODUCTOS IMG/Conector 8pines h y m.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,548)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Conector 8 pines macho y hembra</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$280.00</span>
+                                            <span class="normal mini-text">DOP$385.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="PAGINA/IMAGENES/slider/DJI MINI.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(598)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Drone DJI MINI</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$16,500</span>
+                                            <span class="normal mini-text">DOP$25,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="PRODUCTOS IMG/Diodo.jpeg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(3,563)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Diodo zener rectificador</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$30.00</span>
+                                            <span class="normal mini-text">DOP$60.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="PRODUCTOS IMG/placa-fenolica-baquelita-cobre-doble-cara-20x20cm.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(6,000)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Placa Fenólica Una Cara 10x10Cm De Cobre Baquelita</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$850.00</span>
+                                            <span class="normal mini-text">DOP$990.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="PRODUCTOS IMG/transitor bjt.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(1,560)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Transitor BJT</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$25.00</span>
+                                            <span class="normal mini-text">DOP$50.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="PRODUCTOS IMG/transitor pnp.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <!--<div class="discount circle flexcenter"><span>30%</span></div>-->
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(1,633)</span>
+                                        </div>
+                                        <h3 class="main-links"><a href="#">Transitor PNP</a></h3>
+                                        <div class="price">
+                                            <span class="current">DOP$25.00</span>
+                                            <span class="normal mini-text">DOP$50.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--featured products-->
+
+            <div class="banners">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="column">
+                            <div class="banner flexwrap">
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="image">
+                                            <img src="PRODUCTOS IMG/placa-fenolica-baquelita-cobre-doble-cara-20x20cm.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>¡Súper venta!</h4>
+                                            <h3><span>Obtenlo Aquí</span><br>Placa Fenolica</h3>
+                                            <a href="#" class="primary-button">Compra Ahora</a>
+                                        </div>
+                                        <a href="#" class="over-link"></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="item get-gray">
+                                        <div class="image-1">
+                                            <img src="PAGINA/IMAGENES/slider/IPAD PRO.jpeg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Nunca digas NO</h4>
+                                            <h3><span>Obtenlo Aquí</span><br>iPad Pro</h3>
+                                            <a href="#" class="primary-button">Compra Ahora</a>
+                                        </div>
+                                        <a href="#" class="over-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--BANNER-->
+
+
+                            <div class="product-categories flexwrap">
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="image">
+                                            <img src="PAGINA/IMAGENES/slider/Macbook.jpg" alt="">
+                                        </div>
+                                        <div class="content mini-links">
+                                            <h4>Computadoras</h4>
+                                            <ul class="flexcol">
+                                                <li><a href="#">Computadoras</a></li>
+                                                <li><a href="#">Laptops</a></li>
+                                                <li><a href="#">Mini Laptops</a></li>
+                                                <li><a href="#">Tablets</a></li>
+                                                <li><a href="#">Accesorios</a></li>
+                                            </ul>
+                                            
+                                        <div class="second-links">
+                                            <a href="#" class="view-all">Ver todo<i class="ri-arrow-right-line"></i>
+                                            </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="image">
+                                            <img src="PAGINA/IMAGENES/banner/procat2.jpg" alt="">
+                                        </div>
+                                        <div class="content mini-links">
+                                            <h4>Electrónicos</h4>
+                                            <ul class="flexcol">
+                                                <li><a href="#">Smartphones</a></li>
+                                                <li><a href="#">Fundas</a></li>
+                                                <li><a href="#">Cargadores</a></li>
+                                                <li><a href="#">Auriculares</a></li>
+                                                <li><a href="#">Baterías</a></li>
+                                            </ul>
+                                            
+                                        <div class="second-links">
+                                            <a href="#" class="view-all">Ver todo<i class="ri-arrow-right-line"></i>
+                                            </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="image">
+                                            <img src="PRODUCTOS IMG/1200px-Arduino-uno-perspective-transparent.png" alt="">
+                                        </div>
+                                        <div class="content mini-links">
+                                            <h4>Componentes</h4>
+                                            <ul class="flexcol">
+                                                <li><a href="#">Electricos</a></li>
+                                                <li><a href="#">Mecánicos</a></li>
+                                                <li><a href="#">Básicos</a></li>
+                                                <li><a href="#">Aislantes</a></li>
+                                                <li><a href="#">Bajo Costo</a></li>
+                                            </ul>
+                                            
+                                        <div class="second-links">
+                                            <a href="#" class="view-all">Ver todo<i class="ri-arrow-right-line"></i>
+                                            </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+         <!--MAIN-->
+        
+        <footer>
+            <div class="newsletter">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="box">
+                            <div class="content">
+                                <h3>únete a nuestras noticias</h3>
+                                <p>Obten actualizaciones de nuestros nuevos productos y <strong>ofertas especiales</strong></p>
+                            </div>
+                            <form action="" class="search">
+                                <span class="icon-large"><i class="ri-mail-line"></i></span>
+                                <input type="mail" placeholder="Correo electrónico" required>
+                                <button type="submit">Inicia Sección</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Newsletter-->
+
+            <div class="widgets">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="flexwrap">
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Ayuda y contactos</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Tu cuenta</a></li>
+                                        <li><a href="#">Tus ordenes</a></li>
+                                        <li><a href="#">Tarifas de envio</a></li>
+                                        <li><a href="#">Devolver</a></li>
+                                        <li><a href="#">Assistente</a></li>
+                                        <li><a href="#">Ayuda</a></li>
+                                        <li><a href="#">Contactanos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Categorías</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Computadoras y accesorios</a></li>
+                                        <li><a href="#">Teléfonos Móviles y accesorios</a></li>
+                                        <li><a href="#">Cámaras y videocámaras</a></li>
+                                        <li><a href="#">Juegos y entretenimiento</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Informaciones de pago</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Tarjeta de negocios</a></li>
+                                        <li><a href="#">Compra con puntos</a></li>
+                                        <li><a href="#">Recarga tu balance</a></li>
+                                        <li><a href="#">Paypal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Sobre nosotros</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Informaciones de la compañía</a></li>
+                                        <li><a href="#">Noticias</a></li>
+                                        <li><a href="#">Carreras</a></li>
+                                        <li><a href="#">Políticas</a></li>
+                                        <li><a href="#">Reseña de los compradores</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--widgets-->
+
+            <div class="footer-info">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="flexcol">
+                            <div class="logo">
+                                <a href="#"><span class="cicle"></span>Nextron</a>
+                            </div>
+                            <div class="socials">
+                                <ul class="flexitem">
+                                    <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-facebook-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-github-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="mini-text">Copyright 2023 © Nextron. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+         <!--FOOTER-->
+
+         <div class="menu-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+                    <nav>
+                        <ul class="flexitem">
+                            <li>
+                                <a href="#">
+                                    <i class="ri-bar-chart-line"></i>
+                                    <span>Tendencia</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-user-6-line"></i>
+                                    <span>Cuenta</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-heart-line"></i>
+                                    <span>Wishlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0" class="t-search">
+                                    <i class="ri-search-line"></i>
+                                    <span>Buscar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0" class="cart-trigger">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    <span>Compras</span>
+                                    <div class="fly-item">
+                                        <span class="item-number">0</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+         </div>
+         <!--MENU BOTTOM-->
+
+         <div class="search-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+                    <form action="" class="search">
+                        <a href="#" class="t-close search-close flexcenter"><i class="ri-close-line"></i></a>
+                        <span class="icon-large"><i class="ri-search-line"></i></span>
+                        <input type="search" placeholder="Buscar" required>
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+         </div>
+         <!--SEARCH BOTTOM-->
+
+         <div class="overlay"></div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
